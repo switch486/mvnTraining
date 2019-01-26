@@ -10,7 +10,7 @@ public class JavaBasics_Numbers {
      * @return both arguments multiplied
      */
     public static int multiply(int num1, int num2) {
-        // TODO Auto-generated method stub
+        // TODO multiply two numbers
         return 0;
     }
 
