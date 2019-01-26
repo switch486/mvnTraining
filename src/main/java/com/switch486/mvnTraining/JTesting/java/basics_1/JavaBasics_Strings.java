@@ -8,7 +8,7 @@ public class JavaBasics_Strings {
      * @return reversed string
      */
     public static String reverse(String source) {
-        // TODO Auto-generated method stub
+        // TODO komentarz
         return null;
     }
 
@@ -18,7 +18,7 @@ public class JavaBasics_Strings {
      * @return a copy of the string
      */
     public static String copyStringValue(String source) {
-        // TODO Auto-generated method stub
+        // TODO moja metoda
         return null;
     }
 
