@@ -35,7 +35,7 @@ public class JavaBasics_Strings {
      * @return uncensoredString with the forbiddenWord removed from it.
      */
     public static String censorString(String uncensoredString, String forbiddenWord) {
-        // TODO Auto-generated method stub
+        // TODO ewa implement the method
         return null;
     }
 
