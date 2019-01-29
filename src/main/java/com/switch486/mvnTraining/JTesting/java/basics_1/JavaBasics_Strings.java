@@ -39,4 +39,33 @@ public class JavaBasics_Strings {
         return null;
     }
 
+    /**
+     * This function counts appearances of a specific letter in an input string.
+     *
+     * <p>
+     * countLetter("aaaa", 'a') -> 4
+     * <p>
+     *
+     * @param input
+     *            the input string
+     * @param letter
+     *            the letter to search for
+     * @return number of appearances in the input string
+     */
+    public static int countLetter(String input, char letter) {
+        // TODO implement the method body
+        return -1;
+    }
+
+    /**
+     * @param strings
+     *            the string array to search for the longest one
+     * @return the longest string according to the string.length method
+     */
+    public static String findLongestString(String... strings) {
+        // TODO implement the method body
+
+        return null;
+    }
+
 }
