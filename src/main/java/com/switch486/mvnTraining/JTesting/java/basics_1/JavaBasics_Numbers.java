@@ -1,5 +1,9 @@
 package com.switch486.mvnTraining.JTesting.java.basics_1;
 
+import java.util.Arrays;
+import java.util.OptionalInt;
+import java.util.stream.IntStream;
+
 public class JavaBasics_Numbers {
 
     /**
@@ -11,7 +15,7 @@ public class JavaBasics_Numbers {
      */
     public static int multiply(int num1, int num2) {
         // TODO mnożenie
-        return 0;
+        return num1 * num2;
     }
 
     /**
@@ -21,7 +25,10 @@ public class JavaBasics_Numbers {
      */
     public static int multiMultiply(int... numbersToMultiply) {
         // TODO mojemnozenie
-        return 0;
+
+        final OptionalInt result = Arrays.stream(numbersToMultiply).reduce(JavaBasics_Numbers::multiply);
+
+        return result.getAsInt();
     }
 
     /**
@@ -31,7 +38,9 @@ public class JavaBasics_Numbers {
      */
     public static int factorial(int n) {
         // TODO Auto-generated method stub
-        return 0;
+
+        final IntStream range = IntStream.range(1, n + 1);
+        return multiMultiply(range.toArray());
     }
 
 }

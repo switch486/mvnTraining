@@ -8,8 +8,10 @@ public class JavaBasics_Strings {
      * @return reversed string
      */
     public static String reverse(String source) {
-        // TODO komentarz
-        return null;
+        // TODO Auto-generated method stub
+
+        StringBuilder sb = new StringBuilder(source);
+        return sb.reverse().toString();
     }
 
     /**
@@ -18,8 +20,8 @@ public class JavaBasics_Strings {
      * @return a copy of the string
      */
     public static String copyStringValue(String source) {
-        // TODO moja metoda
-        return null;
+        // TODO Auto-generated method stub
+        return new String(source);
     }
 
     /**
@@ -35,8 +37,17 @@ public class JavaBasics_Strings {
      * @return uncensoredString with the forbiddenWord removed from it.
      */
     public static String censorString(String uncensoredString, String forbiddenWord) {
-        // TODO ewa implement the method
-        return null;
+        // TODO Auto-generated method stub
+
+        StringBuilder sb = new StringBuilder(uncensoredString);
+
+        int indexOf = sb.indexOf(forbiddenWord);
+        while (indexOf != -1) {
+            sb.replace(indexOf, forbiddenWord.length() + indexOf, "");
+            indexOf = sb.indexOf(forbiddenWord);
+        }
+
+        return sb.toString();
     }
 
 }
