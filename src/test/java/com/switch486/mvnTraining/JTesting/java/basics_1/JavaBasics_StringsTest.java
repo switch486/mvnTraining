@@ -13,7 +13,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class JavaBasics_StringsTest {
 
     @Test
-    public void testReverseString() {
+    public void testReverseString_Palindrome() {
         // given
         String source = "was it a rat i saw";
 
@@ -22,6 +22,18 @@ public class JavaBasics_StringsTest {
 
         // then
         assertThat(reversed).isEqualTo("was i tar a ti saw");
+    }
+
+    @Test
+    public void testReverseString_Word() {
+        // given
+        String source = "mood";
+
+        // when
+        String reversed = JavaBasics_Strings.reverse(source);
+
+        // then
+        assertThat(reversed).isEqualTo("doom");
     }
 
     @Test
@@ -38,7 +50,20 @@ public class JavaBasics_StringsTest {
     }
 
     @Test
-    public void testCensorString() {
+    public void testCensorString_Kaligrafia() {
+        // given
+        String given = "Kaligra###fia";
+        String forbidden = "###";
+
+        // when
+        String censoredString = JavaBasics_Strings.censorString(given, forbidden);
+
+        // then
+        assertThat(censoredString).isEqualTo("Kaligrafia");
+    }
+
+    @Test
+    public void testCensorString_Lorem() {
         // given
         String loremIpsumString = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, "
             + "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
