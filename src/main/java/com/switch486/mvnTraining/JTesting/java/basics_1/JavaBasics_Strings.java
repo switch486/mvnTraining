@@ -1,5 +1,7 @@
 package com.switch486.mvnTraining.JTesting.java.basics_1;
 
+import java.util.Arrays;
+
 public class JavaBasics_Strings {
 
     /**
@@ -65,7 +67,11 @@ public class JavaBasics_Strings {
      */
     public static int countLetter(String input, char letter) {
         // TODO implement the method body
-        return -1;
+        if (input == null) {
+            return 0;
+        }
+
+        return input.chars().map(a -> a == letter ? 1 : 0).reduce(Integer::sum).getAsInt();
     }
 
     /**
@@ -76,7 +82,7 @@ public class JavaBasics_Strings {
     public static String findLongestString(String... strings) {
         // TODO implement the method body
 
-        return null;
+        return Arrays.stream(strings).reduce((s1, s2) -> s2.length() > s1.length() ? s2 : s1).get();
     }
 
 }
