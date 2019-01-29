@@ -25,7 +25,29 @@ public class JavaBasics_NumbersTest {
     }
 
     @Test
-    public void testMultiMultiplication() {
+    public void testMultiMultiplication_1() {
+        // given
+
+        // when
+        int result = JavaBasics_Numbers.multiMultiply(3);
+
+        // then
+        assertThat(result).isEqualTo(3);
+    }
+
+    @Test
+    public void testMultiMultiplication_2() {
+        // given
+
+        // when
+        int result = JavaBasics_Numbers.multiMultiply(3, 4);
+
+        // then
+        assertThat(result).isEqualTo(12);
+    }
+
+    @Test
+    public void testMultiMultiplication_10() {
         // given
 
         // when
