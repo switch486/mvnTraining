@@ -43,4 +43,13 @@ public class JavaBasics_Numbers {
         return multiMultiply(range.toArray());
     }
 
+    /**
+     * @param number
+     *            the number
+     * @return sum of the digits in the number
+     */
+    public static int sumOfDigits(int number) {
+        return -1;
+    }
+
 }

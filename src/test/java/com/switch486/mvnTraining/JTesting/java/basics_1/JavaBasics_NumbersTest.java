@@ -68,4 +68,37 @@ public class JavaBasics_NumbersTest {
         assertThat(result).isEqualTo(3628800);
     }
 
+    @Test
+    public void testSumOfDigits_9() {
+        // given
+
+        // when
+        int result = JavaBasics_Numbers.sumOfDigits(9);
+
+        // then
+        assertThat(result).isEqualTo(9);
+    }
+
+    @Test
+    public void testSumOfDigits_23() {
+        // given
+
+        // when
+        int result = JavaBasics_Numbers.sumOfDigits(23);
+
+        // then
+        assertThat(result).isEqualTo(5);
+    }
+
+    @Test
+    public void testSumOfDigits_1234567890() {
+        // given
+
+        // when
+        int result = JavaBasics_Numbers.sumOfDigits(1234567890);
+
+        // then
+        assertThat(result).isEqualTo(45);
+    }
+
 }
