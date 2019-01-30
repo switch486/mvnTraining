@@ -49,7 +49,13 @@ public class JavaBasics_Numbers {
      * @return sum of the digits in the number
      */
     public static int sumOfDigits(int number) {
-        return -1;
+        String s = "" + number;
+
+        return s.chars().map(JavaBasics_Numbers::toI).reduce(Integer::sum).getAsInt();
+    }
+
+    public static int toI(int c) {
+        return Character.getNumericValue(c);
     }
 
 }
