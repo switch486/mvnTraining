@@ -29,10 +29,10 @@ public class JavaBasics_NumbersTest {
         // given
 
         // when
-        int result = JavaBasics_Numbers.multiMultiply(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        int result = JavaBasics_Numbers.multiMultiply(1, 2, 3, 4, 5, 6, 7, 8, 9);
 
         // then
-        assertThat(result).isEqualTo(3628800);
+        assertThat(result).isEqualTo(362880);
     }
 
     @Test
@@ -40,7 +40,7 @@ public class JavaBasics_NumbersTest {
         // given
 
         // when
-        int result = JavaBasics_Numbers.factorial(10);
+        long result = JavaBasics_Numbers.factorial(10);
 
         // then
         assertThat(result).isEqualTo(3628800);
