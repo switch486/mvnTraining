@@ -34,4 +34,13 @@ public class JavaBasics_Numbers {
         return 0;
     }
 
+    /**
+     * @param number
+     *            the number
+     * @return sum of the digits in the number
+     */
+    public static int sumOfDigits(int number) {
+        return -1;
+    }
+
 }
