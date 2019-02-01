@@ -1,5 +1,8 @@
 package com.switch486.mvnTraining.JTesting.java.basics_1;
 
+//import org.assertj.core.internal.Strings;
+import org.springframework.util.StringUtils;
+
 public class JavaBasics_Strings {
 
 	/**
@@ -49,15 +52,9 @@ public class JavaBasics_Strings {
      * @return uncensoredString with the forbiddenWord removed from it.
      */
     public static String censorString(String uncensoredString, String forbiddenWord) {
-      
-    	
-//		String uncesoredString;
-//		String forbiddenWord1;
-//		newString = ""
-//		char[] uncesoredStringTab = uncesoredString.toCharArray();
-//		for(int i = 0; i < uncensoredStringTab.length; i++) {
-//    		copyString[i] = sourceTab[sourceTab.length];
-        return "";
+        	
+	return StringUtils.replace(uncensoredString, forbiddenWord, null);//znalazłam takie cudo tu nie działa any idea??
+        
     }
 
 	/**
@@ -74,19 +71,31 @@ public class JavaBasics_Strings {
 	 * @return number of appearances in the input string
 	 */
 	public static int countLetter(String input, char letter) {
-		// TODO implement the method body
-		return -1;
+		int numberLetter = 0;
+		char znakiNapisu = 0;
+		for(int i = 0; i < input.length(); i++) {
+			znakiNapisu = input.charAt(i);
+		}
+		if (znakiNapisu == letter) {
+			numberLetter++;
+		}
+		return numberLetter;
 	}
+}
 
 	/**
 	 * @param strings
 	 *            the string array to search for the longest one
 	 * @return the longest string according to the string.length method
 	 */
-	public static String findLongestString(String... strings) {
-		// TODO implement the method body
-
-		return null;
-	}
-
-}
+//	public static String findLongestString(String... strings) {
+//		public int length ();
+//		
+//		
+//}
+//		
+//return null;
+//		
+//	}
+//
+//}

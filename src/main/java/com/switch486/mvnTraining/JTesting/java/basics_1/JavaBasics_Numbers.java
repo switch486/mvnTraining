@@ -24,20 +24,29 @@ public class JavaBasics_Numbers {
 	public static long factorial(int n) {
 		long silnia = 1;
 		for (int i = 2; i <= n; i++) {
-			
+
 			silnia = silnia * i;
 		}
 
 		return silnia;
 	}
 
-    /**
+	/**
      * @param number
      *            the number
      * @return sum of the digits in the number
      */
     public static int sumOfDigits(int number) {
-        return -1;
+        
+    	int suma;
+    	int number1;
+    	do { int number1 % 10;
+    	number /= 10; 
+    	suma += number1 % 10;
+	
+}
+while (number1 / 10 != 0);
+			return suma;
     }
 
 }
