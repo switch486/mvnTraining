@@ -1,5 +1,6 @@
 package com.switch486.mvnTraining.JTesting.java.basics_1;
 
+import org.assertj.core.internal.Strings;
 //import org.assertj.core.internal.Strings;
 import org.springframework.util.StringUtils;
 
@@ -81,21 +82,25 @@ public class JavaBasics_Strings {
 		}
 		return numberLetter;
 	}
-}
+	
+
 
 	/**
 	 * @param strings
 	 *            the string array to search for the longest one
 	 * @return the longest string according to the string.length method
 	 */
-//	public static String findLongestString(String... strings) {
-//		public int length ();
-//		
-//		
-//}
-//		
-//return null;
-//		
-//	}
-//
-//}
+	public static String findLongestString(String... strings) {
+		for (int i = 0; i < strings.length; i++) {
+			wyraz += strings.charAt(i);
+			
+		}
+		
+		
+}
+		
+return null;
+		
+	}
+
+}

@@ -38,14 +38,13 @@ public class JavaBasics_Numbers {
      */
     public static int sumOfDigits(int number) {
         
-    	int suma;
-    	int number1;
-    	do { int number1 % 10;
-    	number /= 10; 
-    	suma += number1 % 10;
+    	int suma = 0;
+    	    	
+    	do {suma += number % 10;
+     	number /= 10;
 	
 }
-while (number1 / 10 != 0);
+while (number  != 0);
 			return suma;
     }
 
