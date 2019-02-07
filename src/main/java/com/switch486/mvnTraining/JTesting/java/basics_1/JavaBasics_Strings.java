@@ -94,13 +94,18 @@ public class JavaBasics_Strings {
 	 * @return the longest string according to the string.length method
 	 */
 	public static String findLongestString(String... strings) {
-		// for (int i = 0; i < strings.length; i++) {
-		// wyraz += strings.charAt(i);
-		//
-		// }
-		//
-		// return longestString;
-		return "";
+		try {
+			String longestString = "";
+			int dlugoscWyrazu = 0;
+			for (int i = 0; i < strings.length; i++) {
+				if (dlugoscWyrazu < strings[i].length()) {
+					longestString = strings[i];
+					dlugoscWyrazu = longestString.length();
+				}
+			}
+			return longestString;
+		} catch (Exception e) {
+			return e.getMessage();
+		}
 	}
-
 }
