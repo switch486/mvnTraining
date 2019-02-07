@@ -54,9 +54,7 @@ public class JavaBasics_Strings {
 	 */
 	public static String censorString(String uncensoredString, String forbiddenWord) {
 
-		return StringUtils.replace(uncensoredString, forbiddenWord, null);// znalazłam takie cudo tu nie działa any
-																			// idea??
-
+		return StringUtils.replace(uncensoredString, forbiddenWord, "");
 	}
 
 	/**
@@ -73,16 +71,21 @@ public class JavaBasics_Strings {
 	 * @return number of appearances in the input string
 	 */
 	public static int countLetter(String input, char letter) {
-		int numberLetter = 0;
-		char znakNapisu = 0;
-		for (int i = 0; i < input.length(); i++) {
-			znakNapisu = input.charAt(i);
 
-			if (znakNapisu == letter) {
-				numberLetter++;
+		if (input == null) {
+			return 0;
+		} else {
+			int numberLetter = 0;
+			char znakNapisu = 0;
+			for (int i = 0; i < input.length(); i++) {
+				znakNapisu = input.charAt(i);
+
+				if (znakNapisu == letter) {
+					numberLetter++;
+				}
 			}
+			return numberLetter;
 		}
-		return numberLetter;
 	}
 
 	/**
