@@ -88,6 +88,20 @@ public class JavaBasics_StringsTest {
         // then
         assertThat(censoredString).isEqualTo(loremIpsumString);
     }
+    
+    @Test
+    public void testCensorString_null() {
+    	//given
+    	String uncensoredString = null;
+    	String forbiddenWord = "#OMG#";
+    	
+    	//when
+    	String censoredString = JavaBasics_Strings.censorString(uncensoredString, forbiddenWord);
+    	
+    	//then
+    	assertThat(censoredString).isEqualTo(null);
+    	
+    }
 
     @Test
     public void testCountLetter_aaaa() {
