@@ -41,22 +41,23 @@ public class JavaBasics_Strings {
 	}
 
 	/**
-     * This function should censor a String. Examples:
-     * <p>
-     * censorString("aaabbbccc", "bbb") -> "aaaccc"
-     * <p>
-     *
-     * @param uncensoredString
-     *            source string
-     * @param forbiddenWord
-     *            word that should be removed from the source
-     * @return uncensoredString with the forbiddenWord removed from it.
-     */
-    public static String censorString(String uncensoredString, String forbiddenWord) {
-        	
-	return StringUtils.replace(uncensoredString, forbiddenWord, null);//znalazłam takie cudo tu nie działa any idea??
-        
-    }
+	 * This function should censor a String. Examples:
+	 * <p>
+	 * censorString("aaabbbccc", "bbb") -> "aaaccc"
+	 * <p>
+	 *
+	 * @param uncensoredString
+	 *            source string
+	 * @param forbiddenWord
+	 *            word that should be removed from the source
+	 * @return uncensoredString with the forbiddenWord removed from it.
+	 */
+	public static String censorString(String uncensoredString, String forbiddenWord) {
+
+		return StringUtils.replace(uncensoredString, forbiddenWord, null);// znalazłam takie cudo tu nie działa any
+																			// idea??
+
+	}
 
 	/**
 	 * This function counts appearances of a specific letter in an input string.
@@ -73,17 +74,16 @@ public class JavaBasics_Strings {
 	 */
 	public static int countLetter(String input, char letter) {
 		int numberLetter = 0;
-		char znakiNapisu = 0;
-		for(int i = 0; i < input.length(); i++) {
-			znakiNapisu = input.charAt(i);
-		}
-		if (znakiNapisu == letter) {
-			numberLetter++;
+		char znakNapisu = 0;
+		for (int i = 0; i < input.length(); i++) {
+			znakNapisu = input.charAt(i);
+
+			if (znakNapisu == letter) {
+				numberLetter++;
+			}
 		}
 		return numberLetter;
 	}
-	
-
 
 	/**
 	 * @param strings
@@ -91,16 +91,13 @@ public class JavaBasics_Strings {
 	 * @return the longest string according to the string.length method
 	 */
 	public static String findLongestString(String... strings) {
-		for (int i = 0; i < strings.length; i++) {
-			wyraz += strings.charAt(i);
-			
-		}
-		
-		
-}
-		
-return null;
-		
+		// for (int i = 0; i < strings.length; i++) {
+		// wyraz += strings.charAt(i);
+		//
+		// }
+		//
+		// return longestString;
+		return "";
 	}
 
 }
